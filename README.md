@@ -8,7 +8,7 @@ Pour clôner ce dépôt (le télécharger sur votre machine), vous devrez instal
 `sudo apt install git`
 
 Ensuite, vous devrez cloner mon dépôt avec git, pour cela, entrez la commande suivante:\
-`git@github.com:AlbanVidalenche/TP-Ansible.git`
+`git clone git@github.com:AlbanVidalenche/TP-Ansible.git`
 
 Cette commande va créer un dossier contenant le code utilisé dans le tp. Vous pourrez utiliser ce dossier pour faire des tests si vous obtenez des erreurs.
 
