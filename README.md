@@ -25,6 +25,6 @@ Comme décrit dans cet article : https://github.com/PowerShell/Win32-OpenSSH/iss
 
 
 Lancez la commande suivante:\
-`sc.exe create sshd binPath=C:\Windows\System32\OpenSSH\ssh.exe`\
+`sc.exe create sshd binPath=C:\Windows\System32\OpenSSH\ssh.exe`
 
-Vous pourrez ensuite relancer la commande `ssh-add` qui devrait maintenant fonctioner.\
+Vous pourrez ensuite relancer la commande `ssh-add` qui devrait maintenant fonctioner.
