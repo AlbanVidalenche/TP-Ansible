@@ -1,0 +1,11 @@
+all:
+  vars:
+    ansible_users: vagrant
+    ansible_port: 22
+
+workshop:
+  children:
+    production:
+      hosts: 
+        node-01.workshop:
+          ansible_host: 10.20.30.11
