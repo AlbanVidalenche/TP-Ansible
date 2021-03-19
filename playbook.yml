@@ -12,3 +12,7 @@
         name: nginx
         enabled: true 
         state: started
+    - name: Installing index file (index.html)
+      copy:
+        src: index.html
+        dest: /var/www/html/index.html
