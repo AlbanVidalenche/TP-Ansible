@@ -1,0 +1,9 @@
+---
+- name: Installing Nginx server
+  hosts: workshop
+  become: true
+  tasks: 
+    - name: Latest Nginx Web Server
+      apt: 
+        name: Nginx
+        state: latest
