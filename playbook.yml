@@ -5,5 +5,5 @@
   tasks: 
     - name: Latest Nginx Web Server
       apt: 
-        name: Nginx
+        name: nginx
         state: latest
