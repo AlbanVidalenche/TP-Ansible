@@ -9,3 +9,10 @@ workshop:
       hosts: 
         node-01.workshop:
           ansible_host: 10.20.30.11
+    staging:
+      hosts:
+        node-02.workshop:
+          ansible_host: 10.20.30.12
+        node-03.workshop:
+          ansible_host: 10.20.30.13
+        
