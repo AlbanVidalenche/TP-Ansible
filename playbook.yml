@@ -7,3 +7,8 @@
       apt: 
         name: nginx
         state: latest
+    - name: Ensure Nginx is enabled and running
+      service: 
+        name: nginx
+        enabled: true 
+        state: started
