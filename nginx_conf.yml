@@ -1,0 +1,17 @@
+---
+- name: Nginx Configuration
+  hosts: web
+  become: true
+  tasks: 
+    - name: Copy Nginx configuration file 
+      copy:
+        src: nginx/status.conf
+        dest: /etc/nginx/conf.d/status.conf
+      notify:
+        - restart nginx
+
+  handlers:
+    - name: restart nginx
+      service: 
+        name: nginx
+        state: restarted

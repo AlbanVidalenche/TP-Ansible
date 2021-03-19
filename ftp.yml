@@ -1,0 +1,11 @@
+---
+- name: Install proftpd
+  hosts: all
+  become: true
+  tasks:
+   - name: Installing FTP Server
+     apt:
+      name: proftpd
+      state: latest
+      update_cache: yes
+     when: inventory_hostname in groups["ftp"]
