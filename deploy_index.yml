@@ -1,0 +1,10 @@
+---
+- name: Custom index file
+  hosts: workshop
+  become: true
+  tasks:
+    - name: Deploying custom index.html
+      copy:
+        src: "index_{{ env }}.html"
+        dest: /var/www/html/index.html
+  
